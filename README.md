@@ -17,7 +17,7 @@ cd cli
 pip install -e .
 
 # Scan your system
-wiselynx scan --save my-first-scan
+wiselynx scan -- my-first-scan
 
 # See what changed after an update
 wiselynx diff my-first-scan current
@@ -32,10 +32,10 @@ Storage changed: 500GB -> 1TB (drive replaced)
 ## Commands
 
 # Preview your system
-wiselynx scan
+wiselynx preview
 
 # Save a baseline before making changes
-wiselynx scan --save before-upgrade
+wiselynx scan -- before-upgrade
 
 # After updates, see what changed
 wiselynx diff before-upgrade current
